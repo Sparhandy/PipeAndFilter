@@ -6,10 +6,8 @@ This repository contains all necessary files to use the [Pipe & Filter Architect
 
 ## Installation with composer
 
-For now you have to use the dev-master version.
-
 ```bash
-composer require "sparhandy/pipeandfilter" "dev-master"
+composer require "sparhandy/pipeandfilter"
 ```
 
 ## Usage
