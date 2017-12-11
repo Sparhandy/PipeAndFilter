@@ -1,0 +1,30 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  - 7.1
+
+# optionally set up exclutions and allowed failures in the matrix
+matrix:
+  allow_failures:
+    - php: 7.0
+    - php: 7.1
+    - php: 7.2
+
+before_install:
+  - composer self-update
+
+install: travis_retry composer update
+
+script:
+  - ./vendor/bin/phpcs -sp --extensions=php --standard=Production ./src
+  - ./vendor/bin/phpmd src text src/phpmd/phpmd.xml --suffixes php
+
+# configure notifications (email, IRC, campfire etc)
+notifications:
+  email: "philipp.witzmann@sh.de"

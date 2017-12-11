@@ -1,0 +1,45 @@
+{
+    "name": "sparhandy/pipeandfilter",
+    "description": "Pipe & Filter Architecture",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Sebastian Knott",
+            "email": "sebastian@sebastianknott.de"
+        },
+        {
+            "name": "Philipp Witzmann",
+            "email": "philipp.witzmann@sh.de"
+        },
+        {
+            "name": "Kevin Szymura",
+            "email": "kevin.szymura@sh.de"
+        },
+        {
+            "name": "Alexander Christmann",
+            "email": "alexander.christmann@sh.de"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Sparhandy/CodingStandard.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sparhandy\\PipeAndFilter\\": "src/",
+            "Sparhandy\\PipeAndFilter\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "sparhandy/codingstandard": "dev-master",
+        "mockery/mockery": "^0.9.9",
+        "phpunit/phpunit": "4.8.*"
+    }
+}
