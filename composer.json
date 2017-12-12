@@ -1,13 +1,13 @@
 {
     "name": "sparhandy/pipeandfilter",
-    "description": "Pipe & Filter Architecture",
+    "description": "Pipe and Filter Architecture",
     "type": "library",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",
     "keywords": [
         "sparhandy",
         "Design Pattern",
-        "Pipe&Filter"
+        "Pipe and Filter"
     ],
     "homepage": "https://github.com/Sparhandy/PipeAndFilter",
     "authors": [
