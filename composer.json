@@ -4,6 +4,12 @@
     "type": "library",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",
+    "keywords": [
+        "sparhandy",
+        "Design Pattern",
+        "Pipe&Filter"
+    ],
+    "homepage": "https://github.com/Sparhandy/PipeAndFilter",
     "authors": [
         {
             "name": "Sebastian Knott",
@@ -22,24 +28,23 @@
             "email": "alexander.christmann@sh.de"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:Sparhandy/CodingStandard.git"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Sparhandy\\PipeAndFilter\\": "src/",
-            "Sparhandy\\PipeAndFilter\\Tests\\": "tests/"
-        }
+    "support": {
+        "issues": "https://github.com/Sparhandy/PipeAndFilter/issues",
+        "wiki": "https://github.com/Sparhandy/PipeAndFilter/wiki",
+        "source": "https://github.com/Sparhandy/PipeAndFilter"
     },
     "require": {
         "php": ">=5.4.0"
     },
     "require-dev": {
-        "sparhandy/codingstandard": "dev-master",
+        "sparhandy/codingstandard": "^1.0",
         "mockery/mockery": "^0.9.9",
         "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sparhandy\\PipeAndFilter\\": "src/",
+            "Sparhandy\\PipeAndFilter\\Tests\\": "tests/"
+        }
     }
 }

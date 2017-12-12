@@ -8,6 +8,7 @@ php:
   - 5.6
   - 7.0
   - 7.1
+  - 7.2
 
 # optionally set up exclutions and allowed failures in the matrix
 matrix:
@@ -23,8 +24,8 @@ install: travis_retry composer update
 
 script:
   - ./vendor/bin/phpcs -sp --extensions=php --standard=Production ./src
-  - ./vendor/bin/phpmd src text src/phpmd/phpmd.xml --suffixes php
+  - ./vendor/bin/phpmd src text vendor/sparhandy/codingstandard/src/phpmd/phpmd.xml --suffixes php
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
-  email: "philipp.witzmann@sh.de"
+  email: "entwickler@sh.de"

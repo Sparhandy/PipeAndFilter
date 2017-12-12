@@ -23,7 +23,7 @@ class PipeFactory
      */
     public function build(array $filters)
     {
-        if(empty($filters))
+        if (empty($filters))
         {
             throw new InvalidArgumentException('No filters provided', 1502290803);
         }
