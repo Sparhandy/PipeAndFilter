@@ -3,7 +3,6 @@
     "description": "Pipe and Filter Architecture",
     "type": "library",
     "license": "BSD-3-Clause",
-    "minimum-stability": "stable",
     "keywords": [
         "sparhandy",
         "Design Pattern",
